@@ -17,29 +17,25 @@
             <h2 id="nepal"></h2>
         </div>
 <script>
-    console.log("index.html | Get Covid Data");
+    
 
 const getCovidData =  async () => {
-    console.log("index.html | Loading...");
     const request = await fetch("https://covid19.mathdro.id/api");
     const data = await request.json();
     return data;
 };
 
 const getCovidDataNepal =  async () => {
-    console.log("index.html | Loading...");
     const request1 = await fetch("https://covid19.mathdro.id/api/countries/nepal");
     const data1 = await request1.json();
     return data1;
 };
 
 getCovidData().then(covidData => {
-    console.log("index.html | covid data", covidData);
     document.getElementById("total-cases").innerHTML = covidData.confirmed.value;
 });
 
 getCovidDataNepal().then(covidDataNepal => {
-    console.log("index.html | covid data", covidDataNepal);
     document.getElementById("nepal").innerHTML = covidDataNepal.confirmed.value;
 });
 </script>
