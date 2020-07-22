@@ -75,67 +75,6 @@ h1.entry-title {
     11. Responsive CSS
 ====================================== */
 
-@media screen and (max-width: 1599px) {
-
-    .content-left {
-        width: 320px;
-    }
-
-    .content-left-wrapper {
-        padding-left: 55px;
-    }
-
-    .content-right {
-        margin-left: 320px;
-        width: calc(100% - 320px);
-    }
-
-    .menu-holder {
-        width: 320px;
-        transform: translateX(-320px);
-        padding-left: 55px;
-    }
-
-    .big-num {
-        width: 320px;
-    }
-
-    .current-big-num {
-        font-size: 130px;
-    }
-
-    .icon-scroll {
-        bottom: 17px;
-    }
-
-    .section {
-        padding-top: 75px;
-    }
-
-    .content-right-wrapper > div:last-of-type {
-        padding-bottom: 75px;        
-    }
-
-    .top-pagination,
-    .menu-wrapper {
-        padding-top: 110px;
-    }
-
-
-    .grid {
-        width: calc(100% + 4vw);
-        margin-left: -2vw;
-    }
-
-    .grid-item {
-        border-width: 1vw;
-    }
-
-    .category-filter {
-        right: -1vw;
-    }
-
-}
 
 @media screen and (min-width: 1360px) and (max-width: 1550px) {
 
